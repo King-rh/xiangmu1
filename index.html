@@ -1,0 +1,507 @@
+<link rel="shortcut icon" href="favicon/bitbug_favicon.ico">
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta name='viewport' content='width=device-width,  initial-scale=1.0'>
+    <meta content='telephone=no,email=no' name='format-detection'  />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="cj/jQueryAos.js/dist/aos.js"></script>
+    <script src="cj/count/js/count.js"></script>
+    <script src="js/top.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="cj/font_y9xg1pkasz/iconfont.css">
+    <link rel="stylesheet" href="cj/jQueryAos.js/dist/aos.css">
+    <link rel="stylesheet" href="css/tw.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/top.css">
+    <title>成都优讯科技有限公司</title>
+    <style>
+        @font-face {
+            font-family: Exotic;
+            src: url(Exotic\ 350\ Bold\ BT.ttf);
+        }
+    </style>
+</head>
+
+<body aos-easing="ease-out-back" aos-duration="1000" aos-delay="0">
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+        <nav class="nav">
+            <div class="navbox">
+                <a href="index.html" class="active">
+                    <p>首页</p>
+                    <b>首页</b>
+                </a>
+                <a href="hlst/hlst1.html" class="">
+                    <p>互联生态</p>
+                    <b>互联生态</b>
+                </a>
+                <a href="zhyx/zhyx1.html" class="">
+                    <p>智慧营销</p>
+                    <b>智慧营销</b>
+                </a>
+                <a href="qtgyy/qtgyy.html" class="">
+                    <p>全托管运营</p>
+                    <b>全托管运营</b>
+                </a>
+                <a href="xwdt.html" class="">
+                    <p>新闻动态</p>
+                    <b>新闻动态</b>
+                </a>
+                <a href="helloyx/helloyx1.html" class="">
+                    <p>Hello优讯</p>
+                    <b>Hello优讯</b>
+                </a>
+            </div>
+        </nav>
+        <div class="menu_btn">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <script>
+        $(function () {
+            $(".menu_btn").click(function () {
+                $(this).toggleClass("act").parent().toggleClass("activ").children("nav").toggleClass(
+                    "navg")
+            })
+        })
+    </script>
+    <!-- ************************导航************************** -->
+    <div class="htmleaf-container">
+        <div id="sections-wrapper">
+            <section class="show" data-img="img/lb1.png"></section>
+            <section class="hide-bottom" data-img="img/lb2.png"></section>
+            <section class="hide-bottom" data-img="img/lb3.png"></section>
+        </div>
+
+        <!-- sections control -->
+        <div class="sections-control">
+            <div class="section-thumbnail active"></div>
+            <div class="section-thumbnail"></div>
+            <div class="section-thumbnail"></div>
+        </div>
+    </div>
+
+    <script src="js/anime.min.js"></script>
+    <script src="js/interaction.js"></script>
+
+    <!-- ************************轮播图************************** -->
+    <section class="about">
+        <div class="box2">
+            <div class="_PageTitle">
+                <p class="en">what do we do?</p>
+                <p class="cn">我们是做什么的?</p>
+                <p class="describe">致力于景区的可视化管理与智能化运营，优化再造景区业务流程。</p>
+            </div>
+            <ul class="wisdom">
+                <li class="divtest " aos="fade-left" aos-once="true" style="transition: ease .5s 0s;">
+                    <div class="hidebox">
+                        <div class="title">
+                            <i></i>
+                            <b>智慧旅游</b>
+                        </div>
+                        <div class="introduction">
+                            智慧旅游4.0：大数据变革旅游经营模式，进行市场需求方向的精准预测。
+                        </div>
+                    </div>
+                </li>
+                <li class="divtest " aos="fade-left" aos-once="true" style="transition: ease .5s .2s;">
+                    <div class="hidebox">
+                        <div class="title">
+                            <i></i>
+                            <b>智慧交通</b>
+                        </div>
+                        <div class="introduction">
+                            智慧交通4.0：大数据变革旅游经营模式，进行市场需求方向的精准预测。
+                        </div>
+                    </div>
+                </li>
+                <li class="divtest " aos="fade-left" aos-once="true" style="transition: ease .5s .4s;">
+                    <div class="hidebox">
+                        <div class="title">
+                            <i></i>
+                            <b>智慧支付</b>
+                        </div>
+                        <div class="introduction">
+                            智慧支付4.0：大数据变革旅游经营模式，进行市场需求方向的精准预测。
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <script>
+                $(function () {
+                    $(".wisdom").children("li").mouseover(function () {
+                        $(this).css("z-index", "2").siblings().css("z-index", "1")
+                    })
+                })
+            </script>
+            <a href="hlst/hlst1.html" class="_more">
+                了解更多
+                <i class="iconfont icon-gengduo"></i>
+            </a>
+        </div>
+    </section>
+    <!-- ************************我们是做什么的************************** -->
+    <section class="problem">
+        <div class="box3">
+            <div class="TitleBox" aos-once="true" aos="fade-left">
+                <p class="en">WHAT'S YOUR PROBLEM?</p>
+                <p class="cn">您的问题是什么?</p>
+                <p class="describe ly">在线旅游市场高速发展，倒逼传统旅游企业转型升级。</p>
+            </div>
+            <div class="answer" aos-once="true" aos="fade-right">
+                <ul class="l">
+                    <li>
+                        <p>01购票渠道少</p>
+                        <p>有些景区无论从分销的广度、深度来说都缺乏相应的购票渠道。</p>
+                    </li>
+                    <li>
+                        <p>02检票效率低</p>
+                        <p>在客流量高峰期可能造成游客滞留现象。</p>
+                    </li>
+                    <li>
+                        <p>03二次营销难</p>
+                        <p>过于依赖门票收入；纪念品同质化，缺乏吸引力。</p>
+                    </li>
+                </ul>
+                <ul class="r">
+                    <li>
+                        <p>04运营成本高</p>
+                        <p>传统景区投入的人力、物力使得运营成本变高。</p>
+                    </li>
+                    <li>
+                        <p>05资金管理风险</p>
+                        <p>景区票务的粗放式人工管理造成资金管理风险。</p>
+                    </li>
+                </ul>
+                <a href="hlst/hlst1.html" class="_more ff">
+                    了解更多
+                    <i class="iconfont icon-gengduo"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ************************您的问题是什么************************** -->
+    <section class="Industry">
+        <div class="_fl">
+            <div class="switchButton">
+                <a href="zhyx/zhyx1.html" class="active2">
+                    <i class="iconfont icon-dengpao"></i>
+                    <b>智慧营销</b>
+                </a>
+                <a href="qtgyy/qtgyy.html">
+                    <i class="iconfont icon-weituoren"></i>
+                    <b>全托管运营</b>
+                </a>
+            </div>
+        </div>
+        <div class="_fr">
+            <div class="_PageTitle">
+                <p class="en">USC ECOSYSTEM</p>
+                <p class="cn">优讯互联生态?</p>
+                <p class="describe">智慧旅游终端解决方案，系统化打造万物互联智慧生态</p>
+            </div>
+            <div class="ecosystemBox">
+                <div class="ulbox">
+                    <ul>
+                        <li aos-once="true" aos="fade-left" style="transition: ease .5s .0s">
+                            <a href="zhyx/zhyx1.html">
+                                <i>1</i>
+                                <p>热点营销</p>
+                            </a>
+                        </li>
+                        <li aos-once="true" aos="fade-left" style="transition: ease .5s .2s">
+                            <a href="zhyx/zhyx2.html">
+                                <i>2</i>
+                                <p>事件营销</p>
+                            </a>
+                        </li>
+                        <li aos-once="true" aos="fade-left" style="transition: ease .5s .4s">
+                            <a href="zhyx/zhyx3.html">
+                                <i>3</i>
+                                <p>客源地营销</p>
+                            </a>
+                        </li>
+                        <li aos-once="true" aos="fade-left" style="transition: ease .5s .6s">
+                            <a href="zhyx/zhyx4.html">
+                                <i>4</i>
+                                <p>淡季营销</p>
+                            </a>
+                        </li>
+                        <li aos-once="true" aos="fade-left" style="transition: ease .5s .8s">
+                            <a href="zhyx/zhyx5.html">
+                                <i>5</i>
+                                <p>社交媒体广告</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="qtgyy/qtgyy.html" class="swsd">
+                                <i>1</i>
+                                <p>关于景区托运运营的三问三答</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="qtgyy/qtgyy2.html">
+                                <i>2</i>
+                                <p>运维规划</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="qtgyy/qtgyy3.html">
+                                <i>3</i>
+                                <p>系统运维</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="qtgyy/qtgyy4.html">
+                                <i>4</i>
+                                <p>大数据分析</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(function () {
+            $(".switchButton").children("a").mouseover(function () {
+                $(this).addClass("active2").siblings().removeClass("active2");
+            })
+            $(".switchButton").children("a").eq(0).mouseover(function () {
+                $(".ulbox").removeClass("active3")
+            })
+            $(".switchButton").children("a").eq(1).mouseover(function () {
+                $(".ulbox").addClass("active3")
+            })
+        })
+    </script>
+    <!-- ************************优讯互联生态************************** -->
+    <section class="dataCenter">
+        <div class="_PageTitle" aos="fade-up" style="transition: ease .5s " aos-once="true">
+            <p class="en">BIG DATA CENTER</p>
+            <p class="cn">大数据中心?</p>
+        </div>
+        <div class="describer" aos="fade-up" style="transition: ease .5s " aos-once="true">
+            <p class="describe">基于数据仓库建立可视化工具，通过数据处理、分析、透视、挖掘。</p>
+            <p class="describe">全信息无缝输出，让精准营销与个性化服务大有可为！</p>
+        </div>
+        <ul class="box4">
+            <li aos="fade-up" style="transition: ease .5s .2s" aos-once="true">
+                <div class="border">
+                    <div class="iconT">
+                        <i class="iconfont icon icon-tongji-"></i>
+                        <i class="bg"></i>
+                    </div>
+                    <div class="title">人流检测</div>
+                    <div class="iconBorder"></div>
+                    <div class="iconBorderBg"></div>
+                </div>
+                <div class="w960">
+                    <div class="instructions">对景点进行实时人流监测，实时显示人流热力图。</div>
+                    <a href="qtgyy/qtgyy4.html" class="_more ff fff">
+                        了解更多
+                        <i class="iconfont icon-gengduo"></i>
+                    </a>
+                </div>
+            </li>
+            <li aos="fade-up" style="transition: ease .5s .4s" aos-once="true">
+                <div class="border">
+                    <div class="iconT">
+                        <i class="iconfont icon icon-liangren"></i>
+                        <i class="bg"></i>
+                    </div>
+                    <div class="title">人群侧写</div>
+                    <div class="iconBorder"></div>
+                    <div class="iconBorderBg"></div>
+                </div>
+                <div class="w960">
+                    <div class="instructions">包括男女比例、年龄层次、地域分布 </div>
+                    <a href="qtgyy/qtgyy4.html" class="_more ff fff">
+                        了解更多
+                        <i class="iconfont icon-gengduo"></i>
+                    </a>
+                </div>
+            </li>
+            <li aos="fade-up" style="transition: ease .5s .6s" aos-once="true">
+                <div class="border">
+                    <div class="iconT">
+                        <i class="iconfont icon icon-jy2_bingzhuangtongji2"></i>
+                        <i class="bg"></i>
+                    </div class="w960">
+                    <div class="title">客源结构</div>
+                    <div class="iconBorder"></div>
+                    <div class="iconBorderBg"></div>
+                </div>
+                <div class="w960">
+                    <div class="instructions">游客人群结构：从客源中细分人群。例如：学生群体、商务人士、工薪阶层等等。</div>
+                    <a href="qtgyy/qtgyy4.html" class="_more ff fff">
+                        了解更多
+                        <i class="iconfont icon-gengduo"></i>
+                    </a>
+                </div>
+            </li>
+            <li aos="fade-up" style="transition: ease .5s .8s" aos-once="true">
+                <div class="border">
+                    <div class="iconT">
+                        <i class="iconfont icon icon-dianzan_active-copy-copy"></i>
+                        <i class="bg"></i>
+                    </div>
+                    <div class="title">游客偏好</div>
+                    <div class="iconBorder"></div>
+                    <div class="iconBorderBg"></div>
+                </div>
+                <div class="w960">
+                    <div class="instructions">洞察用户偏好，以数据为主导来制定营销策略。定制产品、调整库存、优化定价。 </div>
+                    <a href="qtgyy/qtgyy4.html" class="_more ff fff">
+                        了解更多
+                        <i class="iconfont icon-gengduo"></i>
+                    </a>
+                </div>
+            </li>
+            <li aos="fade-up" style="transition: ease .5s 1s" aos-once="true">
+                <div class="border">
+                    <div class="iconT">
+                        <i class="iconfont icon icon-yewujiegou"></i>
+                        <i class="bg"></i>
+                    </div>
+                    <div class="title">消费结构</div>
+                    <div class="iconBorder"></div>
+                    <div class="iconBorderBg"></div>
+                </div>
+                <div class="w960">
+                    <div class="instructions">对游客的整体消费统计，分析消费习惯和消费能力等等。</div>
+                    <a href="qtgyy/qtgyy4.html" class="_more ff fff">
+                        了解更多
+                        <i class="iconfont icon-gengduo"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script>
+        $(function () {
+            $(".box4").children("li").mouseover(function () {
+                $(this).children("div").children("a").addClass("active5");
+                $(this).siblings().children("div").children("a").removeClass("active5");
+                $(this).addClass("active4").siblings().removeClass("active4");
+            })
+        })
+    </script>
+    <!-- ************************大数据中心************************** -->
+    <div class="case" id="num">
+        <ul class="szgd">
+            <li class="_PageTitle">
+                <p class="en">OUR CASE</p>
+                <p class="cn">他们都在使用</p>
+            </li>
+            <li class="gd"><i id="num_1" data-sum="60">0</i><sup>+</sup>
+                <span>OTA平台分销商</span>
+            </li>
+            <li class="gd"><i id="num_2" data-sum="10000">0</i><sup>+</sup>
+                <span>旅行社</span>
+            </li>
+        </ul>
+    </div>
+    <!-- ***********************他们都在使用********************** -->
+    <footer class="footer">
+        <div class="info">
+            <div class="fl">
+                <img src="img/logo.png" alt="" class="logoText">
+                <img src="img/2wm.jpg" alt="" class="QRcode">
+                <div class="phone">
+                    <a>028-65225888</a>
+                    <a>028-65225666</a>
+                    <p>成都市高新区天晖路360号22层</p>
+                </div>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="hlst/hlst1.html">互联生态</a><i class="iconfont icon-tx-fill-pinghangsibianxing"></i></li>
+                    <li><a href="hlst/hlst1.html">智慧旅游</a></li>
+                    <li><a href="hlst/hlst2.html">智慧交通</a></li>
+                    <li><a href="hlst/hlst3.html">智慧支付</a></li>
+                </ul>
+                <ul>
+                    <li><a href="zhyx/zhyx1.html">智慧营销</a><i class="iconfont icon-tx-fill-pinghangsibianxing"></i></li>
+                    <li><a href="zhyx/zhyx1.html">热点营销</a></li>
+                    <li><a href="zhyx/zhyx2.html">事件营销</a></li>
+                    <li><a href="zhyx/zhyx3.html">客源地营销</a></li>
+                    <li><a href="zhyx/zhyx4.html">淡季营销</a></li>
+                    <li><a href="zhyx/zhyx5.html">社交媒体广告</a></li>
+                </ul>
+                <ul>
+                    <li><a href="qtgyy/qtgyy.html">全托管运营</a><i class="iconfont icon-tx-fill-pinghangsibianxing"></i></li>
+                    <li><a href="qtgyy/qtgyy.html">关于景区托运运营的三问三答</a></li>
+                    <li><a href="qtgyy/qtgyy2.html">运维规划</a></li>
+                    <li><a href="qtgyy/qtgyy3.html">系统运维</a></li>
+                    <li><a href="qtgyy/qtgyy4.html">大数据分析</a></li>
+                </ul>
+                <ul>
+                    <li><a href="xwdt.html">新闻动态</a><i class="iconfont icon-tx-fill-pinghangsibianxing"></i></li>
+                </ul>
+                <ul>
+                    <li><a href="helloyx/helloyx1.html">hello优迅</a><i class="iconfont icon-tx-fill-pinghangsibianxing"></i></li>
+                    <li><a href="helloyx/helloyx1.html">走进优迅</a></li>
+                    <li><a href="helloyx/helloyx2.html">公司团队</a></li>
+                    <li><a href="helloyx/helloyx3.html">荣誉资质</a></li>
+                    <li><a href="helloyx/helloyx4.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2008 - 2018 成都优讯科技有限公司 蜀ICP备16025890号-5</p>
+        </div>
+    </footer>
+    <i id="top">
+        <img src="img/buttom.png" alt="">
+        <img src="img/top.png" alt="">
+    </i>
+    <!-- *************************底部******************* -->
+</body>
+
+
+<script>
+    // AOS插件
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+    hljs.initHighlightingOnLoad();
+
+    $('.hero__scroll').on('click', function (e) {
+        $('html, body').animate({
+            scrollTop: $(window).height()
+        }, 1200);
+    });
+    // AOS插件
+</script>
+<!--数字滚动插件countUp-->
+<script src="cj/jqueryszgd/statics/js/count.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    productNumber = function () {
+        var arr = [];
+        $('#num .gd').each(function (i, dom) {
+            var iDom = $(dom).find('i'),
+                decimals = 0,
+                sum = iDom.data('sum');
+            //初始化传参，参数为上面注释中的参数    
+            arr.push(new CountUp(iDom.attr('id'), 0, sum, decimals, 4, {
+                useEasing: true, //效果
+                separator: '' //数字分隔符
+            }));
+            arr[i].start();
+        });
+    }();
+</script>
+
+</html>

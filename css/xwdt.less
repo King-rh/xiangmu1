@@ -1,0 +1,213 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: url(../img/新闻动态/bg.jpg) no-repeat;
+    background-attachment: fixed;
+
+    .txt {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 45%;
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+
+        p:nth-child(2) {
+            font-family: Exotic;
+            opacity: .7;
+        }
+    }
+}
+
+.newsPage {
+    padding: 20px 0 50px;
+    position: relative;
+    z-index: 6;
+    background: #fff;
+
+    .w1200 {
+        width: 1200px;
+        margin: auto;
+        position: relative;
+
+        .news16 {
+            padding: 30px 0;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    position: relative;
+                    width: 33.33%;
+                    margin-bottom: 25px;
+
+                    &::after {
+                        content: '';
+                        width: 1px;
+                        height: 100%;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        background: #f1f1f1;
+                    }
+
+                    a {
+                        position: relative;
+                        width: 100%;
+                        display: block;
+                        height: 100%;
+
+                        .hotBox {
+                            padding: 40px 30px 0;
+                            position: relative;
+
+                            .text {
+                                transition: transform .25s cubic-bezier(.46, .03, .52, .96);
+                                position: relative;
+                                z-index: 5;
+
+                                .timer {
+                                    font-family: Medel;
+                                    color: rgba(102, 102, 102, .7);
+                                    font-size: 24px;
+                                    margin-bottom: 35px;
+                                    position: relative;
+                                    z-index: 6;
+                                    transition: color .25s cubic-bezier(.455, .03, .515, .955);
+                                    margin-top: 15px;
+                                }
+
+                                .title {
+                                    color: #333;
+                                    font-size: 16px;
+                                    margin-bottom: 20px;
+                                    position: relative;
+                                    z-index: 6;
+                                    transition: color .25s cubic-bezier(.455, .03, .515, .955);
+                                    height: 42px;
+                                    overflow: hidden;
+                                    line-height: 21px;
+                                }
+
+                                ._TexTrow3 {
+                                    color: rgba(102, 102, 102, .7);
+                                    margin-bottom: 80px;
+                                    line-height: 1.8;
+                                    height: 75px;
+                                    position: relative;
+                                    z-index: 6;
+                                    transition: color .25s cubic-bezier(.455, .03, .515, .955);
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .text {
+                                transform: translateY(-10px);
+
+                                .timer {
+                                    color: #fff;
+                                }
+
+                                .title {
+                                    color: #fff;
+                                }
+
+                                ._TexTrow3 {
+                                    color: #fff;
+                                }
+                            }
+
+                            .HotPic {
+                                .Imgset_bg {
+                                    height: 563px;
+                                    left: 0;
+                                    right: 0;
+                                    width: 100%;
+                                    box-shadow: 0 0.5rem 3rem rgb(24 53 78 / 40%);
+
+                                    &::after {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+
+                        .HotPic {
+                            height: 250px;
+                            width: 100%;
+
+                            .Imgset_bg {
+                                position: absolute;
+                                width: calc(100% - 60px);
+                                left: 30px;
+                                right: 0;
+                                height: 250px;
+                                bottom: 0;
+                                transition: all .25s cubic-bezier(.455, .03, .515, .955);
+                                box-shadow: 0 0 0 rgb(24 53 78 / 0%);
+                                z-index: 2;
+                                background-size: cover;
+                                background-position: center;
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    background-image: linear-gradient(180deg, rgba(94, 140, 162, .8), rgba(24, 53, 78, 0));
+                                    transition: opacity .25s cubic-bezier(.455, .03, .515, .955);
+                                    opacity: 0;
+                                    z-index: 5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .newsPage {
+        .w1200 {
+            width: 100%;
+            .news16 {
+                ul {
+                    li {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .banner {
+        padding-top: 60px;
+    }
+    .newsPage {
+        .w1200 {
+            .news16 {
+                ul {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: url(../img/xwdt/bg.jpg) no-repeat;
+  background-attachment: fixed;
+}
+.banner .txt {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+.banner .txt p:nth-child(2) {
+  font-family: Exotic;
+  opacity: 0.7;
+}
+.newsPage {
+  padding: 20px 0 50px;
+  position: relative;
+  z-index: 6;
+  background: #fff;
+}
+.newsPage .w1200 {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.newsPage .w1200 .news16 {
+  padding: 30px 0;
+}
+.newsPage .w1200 .news16 ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.newsPage .w1200 .news16 ul li {
+  position: relative;
+  width: 33.33%;
+  margin-bottom: 25px;
+}
+.newsPage .w1200 .news16 ul li::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #f1f1f1;
+}
+.newsPage .w1200 .news16 ul li a {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.newsPage .w1200 .news16 ul li a .hotBox {
+  padding: 40px 30px 0;
+  position: relative;
+}
+.newsPage .w1200 .news16 ul li a .hotBox .text {
+  transition: transform 0.25s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  position: relative;
+  z-index: 5;
+}
+.newsPage .w1200 .news16 ul li a .hotBox .text .timer {
+  font-family: Medel;
+  color: rgba(102, 102, 102, 0.7);
+  font-size: 24px;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 6;
+  transition: color 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  margin-top: 15px;
+}
+.newsPage .w1200 .news16 ul li a .hotBox .text .title {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 6;
+  transition: color 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  height: 42px;
+  overflow: hidden;
+  line-height: 21px;
+}
+.newsPage .w1200 .news16 ul li a .hotBox .text ._TexTrow3 {
+  color: rgba(102, 102, 102, 0.7);
+  margin-bottom: 80px;
+  line-height: 1.8;
+  height: 75px;
+  position: relative;
+  z-index: 6;
+  transition: color 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.newsPage .w1200 .news16 ul li a:hover .text {
+  transform: translateY(-10px);
+}
+.newsPage .w1200 .news16 ul li a:hover .text .timer {
+  color: #fff;
+}
+.newsPage .w1200 .news16 ul li a:hover .text .title {
+  color: #fff;
+}
+.newsPage .w1200 .news16 ul li a:hover .text ._TexTrow3 {
+  color: #fff;
+}
+.newsPage .w1200 .news16 ul li a:hover .HotPic .Imgset_bg {
+  height: 563px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0 0.5rem 3rem rgba(24, 53, 78, 0.4);
+}
+.newsPage .w1200 .news16 ul li a:hover .HotPic .Imgset_bg::after {
+  opacity: 1;
+}
+.newsPage .w1200 .news16 ul li a .HotPic {
+  height: 250px;
+  width: 100%;
+}
+.newsPage .w1200 .news16 ul li a .HotPic .Imgset_bg {
+  position: absolute;
+  width: calc(100% - 60px);
+  left: 30px;
+  right: 0;
+  height: 250px;
+  bottom: 0;
+  transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  box-shadow: 0 0 0 rgba(24, 53, 78, 0);
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+}
+.newsPage .w1200 .news16 ul li a .HotPic .Imgset_bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(94, 140, 162, 0.8), rgba(24, 53, 78, 0));
+  transition: opacity 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  opacity: 0;
+  z-index: 5;
+}
+@media screen and (max-width: 1200px) {
+  .banner {
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .newsPage .w1200 {
+    width: 100%;
+  }
+  .newsPage .w1200 .news16 ul li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .banner {
+    padding-top: 60px;
+  }
+  .newsPage .w1200 .news16 ul li {
+    width: 100%;
+  }
+}

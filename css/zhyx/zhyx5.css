@@ -1,0 +1,6 @@
+.banner{
+    position: relative;
+    width: 100%;
+    background: url(../../img/zhyx/bg5.jpg) no-repeat;
+    background-attachment: fixed;
+}
